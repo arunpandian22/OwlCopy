@@ -5,6 +5,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 
 private val DarkColorPalette = darkColors(
     primary = Purple200,
@@ -26,6 +27,27 @@ private val LightColorPalette = lightColors(
     onSurface = Color.Black,
     */
 )
+
+private val BlueThemeLight = lightColors(
+    primary = blue700,
+    onPrimary = Color.White,
+    primaryVariant = blue800,
+    secondary = yellow500
+)
+
+private val BlueThemeDark =
+    darkColors(primary = blue200, secondary = yellow200, surface = blueDarkPrimary)
+
+
+@Composable
+fun BlueTheme(darkTheme: Boolean = isSystemInDarkTheme()) {
+    val colors = if (darkTheme) {
+        BlueThemeDark
+    } else {
+        BlueThemeLight
+    }
+
+}
 
 @Composable
 fun OwlCopyJetpackPracticeTheme(
