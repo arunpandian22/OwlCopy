@@ -1,6 +1,7 @@
 package com.arun.owlcopyjetpackpractice.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.material.Colors
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
@@ -40,25 +41,21 @@ private val BlueThemeDark =
 
 
 @Composable
-fun BlueTheme(darkTheme: Boolean = isSystemInDarkTheme()) {
+fun BlueTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
     val colors = if (darkTheme) {
         BlueThemeDark
     } else {
         BlueThemeLight
     }
-
+    OwlCopyJetpackPracticeTheme(darkTheme,colors,content)
 }
 
 @Composable
 fun OwlCopyJetpackPracticeTheme(
-    darkTheme: Boolean = isSystemInDarkTheme(),
+    darkTheme: Boolean = isSystemInDarkTheme(),colors: Colors,
     content: @Composable () -> Unit
 ) {
-    val colors = if (darkTheme) {
-        DarkColorPalette
-    } else {
-        LightColorPalette
-    }
+
 
     MaterialTheme(
         colors = colors,
