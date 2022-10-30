@@ -12,7 +12,7 @@ import com.arun.owlcopyjetpackpractice.R
 enum class CourseTabs(@StringRes val title: Int, @DrawableRes val icon: Int, val route: String) {
     MY_COURSES(R.string.my_courses, R.drawable.ic_grain, CoursesDestinations.MY_COURSES_ROUTE),
     FEATURED(R.string.featured, R.drawable.ic_featured, CoursesDestinations.FEATURED_ROUTE),
-    SEARCH(R.string.search, R.drawable.ic_search, CoursesDestinations.SEARCH_COURSES_ROUTE)
+    SEARCH(R.string.search, R.drawable.ic_search, CoursesDestinations.SEARCH_COURSES_ROUTE),
 }
 
 /**

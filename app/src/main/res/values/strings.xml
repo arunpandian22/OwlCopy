@@ -5,4 +5,8 @@
     <string name="my_courses">My Courses</string>
     <string name="featured">Featured</string>
     <string name="search">Search</string>
+
+    <!--    Onboarding-->
+    <string name="label_continue_to_courses">Continue to courses</string>
+    <string name="choose_topics_that_interest_you">Choose topics that interest you</string>
 </resources>

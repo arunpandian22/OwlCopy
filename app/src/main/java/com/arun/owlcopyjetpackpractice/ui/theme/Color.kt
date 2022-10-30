@@ -14,4 +14,6 @@ val blueDarkPrimary = Color(0xff1c1d24)
 
 
 val yellow200 = Color(0xffffeb46)
+val yellow400 = Color(0Xffffc000)
 val yellow500 = Color(0xffffde03)
+val yellowDarkPrimary = Color(0xff242316)
